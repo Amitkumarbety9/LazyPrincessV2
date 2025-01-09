@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-client = AsyncIOMotorClient(DATABASE_URI)
-db = client[DATABASE_NAME]
+client = AsyncIOMotorClient(DATABASE_URI"mongodb+srv://turoxhack:turoxhack@cluster0.hixfg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+db = client[DATABASE_NAME"Cluster0"]
 instance = Instance.from_db(db)
 
 @instance.register
